@@ -3,11 +3,11 @@
   <body>
     <h1><%= @recipe.name %></h1>
     <h4>Ingredients</h4>
-    <a><%= @recipe.ingredients %></>
+    <a><%= @recipe.ingredients %></p>
     <p><u>Cook Time:</u> <%= @recipe.cook_time %></p>
     <form action="/recipes/<%= @recipe.id %>/delete" method="post">
       <input id="hidden" type="hidden" name="_method" value="delete">
-      <input type="hidden" value="hidden">
+      <input type="submit" value="delete">
     </form>
   </body>
 </html>
