@@ -1,7 +1,9 @@
-class CreateRecipe < ActiveRecord::Migration
-  def change create_table :users |t|
-    t.string :name 
-    t.string :ingredients
-    t.string :cook_time
+class CreateRecipes < ActiveRecord::Migration
+  def change
+    create_table :recipes do |t|
+      t.string :name
+      t.string :ingredients
+      t.string :cook_time
+    end
   end
-end 
+end
