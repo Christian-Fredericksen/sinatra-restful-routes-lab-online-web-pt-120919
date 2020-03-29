@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1><%= @recipe.name %></h1>
+    <h1><%= @recipe1.name %></h1>
     <h4>Ingredients</h4>
-    <p><%= @recipe.ingredients %></p>
-    <p><u>Cook Time:</u> <%= @recipe.cook_time %></p>
-    <form action="/recipes/<%= @recipe.id %>/delete" method="post">
+    <p><%= @recipe1.ingredients %></p>
+    <p><u>Cook Time:</u> <%= @recipe1.cook_time %></p>
+    <form action="/recipes/<%= @recipe1.id %>/delete" method="post">
       <input id="hidden" type="hidden" name="_method" value="delete">
       <input type="submit" value="delete">
     </form>
