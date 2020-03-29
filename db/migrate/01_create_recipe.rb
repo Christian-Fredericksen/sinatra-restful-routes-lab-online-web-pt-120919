@@ -1,5 +1,5 @@
 class CreateRecipe < ActiveRecord::Migration
-  def create_table :users |t|
+  def change create_table :users |t|
     t.string :name 
     t.string :ingredients
     t.string :cook_time
